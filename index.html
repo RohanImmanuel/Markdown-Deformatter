@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Deformatter</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-code"></i> Markdown Deformatter</h1>
+        <div class="editor-container">
+            <div class="editor">
+                <label for="markdownInput"><i class="fas fa-file-alt"></i> Markdown Input</label>
+                <textarea id="markdownInput" placeholder="Enter Markdown..."></textarea>
+            </div>
+            <div class="editor">
+                <label for="plainTextOutput"><i class="fas fa-align-left"></i> Plain Text Output</label>
+                <textarea id="plainTextOutput" readonly placeholder="Plain text will appear here..."></textarea>
+            </div>
+        </div>
+        <button id="convertBtn"><i class="fas fa-file-export"></i> Convert</button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
