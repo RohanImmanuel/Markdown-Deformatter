@@ -6,4 +6,4 @@ A simple tool to convert Markdown into plain text.
 - Preserves line breaks
 
 ## 🔗 Live Demo
-[Markdown Deformatter](https://rohanimmanuel.com/markdown-deformatter/)
+[Markdown Deformatter](https://rohanimmanuel.com/Markdown-Deformatter/)
