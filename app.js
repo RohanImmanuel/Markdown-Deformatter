@@ -1,3 +1,53 @@
+// Set placeholder text dynamically for multi-line support
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("markdownInput").placeholder = 
+`**Bold Text**
+*Italic Text*
+~~Strikethrough~~
+
+# Heading 1
+## Heading 2
+
+[Google](https://google.com)
+
+> Blockquote
+
+- List Item 1
+- List Item 2
+
+1. Ordered Item 1
+2. Ordered Item 2
+
+\`Inline Code\`
+
+\`\`\`js
+console.log('Code Block');
+\`\`\``;
+
+    document.getElementById("plainTextOutput").placeholder = 
+`Bold Text
+Italic Text
+Strikethrough
+
+Heading 1
+Heading 2
+
+Google
+
+Blockquote
+
+List Item 1
+List Item 2
+
+Ordered Item 1
+Ordered Item 2
+
+Inline Code
+
+console.log('Code Block');`;
+});
+
+// Convert Markdown to Plain Text
 document.getElementById("convertBtn").addEventListener("click", function () {
     let markdownText = document.getElementById("markdownInput").value;
     
